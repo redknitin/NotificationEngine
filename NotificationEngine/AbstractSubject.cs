@@ -26,7 +26,7 @@ namespace NotificationEngine
         T mInstance;
         public T GetState() { return mInstance; }
         public void SetState(T a) {
-            if (!CompareStateOnSet || !mInstance.Equals(a))
+            if (!CompareStateOnSet || (mInstance == null && a != null) || (mInstance != null && !mInstance.Equals(a)))
             {
                 var oldState = mInstance;
                 mInstance = a;

@@ -13,7 +13,7 @@ namespace ReferenceNotificationImplementation
 
         public override bool Equals(object obj)
         {
-            if (obj is RecordModel)
+            if (obj != null && obj is RecordModel)
             {
                 RecordModel mod = (RecordModel)obj;
                 if (ID.Equals(mod.ID) && ModifiedDate.Equals(mod.ModifiedDate))
