@@ -14,8 +14,10 @@ namespace ReferenceNotificationImplementation
             RecordModel lRecord = new RecordModel();
 
             //Fetch from the data source
-            lRecord.ID = DateTime.UtcNow.Ticks.ToString();
-            lRecord.ModifiedDate = DateTime.Now;
+            //lRecord.ID = DateTime.UtcNow.Ticks.ToString();
+            //lRecord.ModifiedDate = DateTime.Now;
+            lRecord.ID = DateTime.UtcNow.Minute.ToString();
+            lRecord.ModifiedDate = DateTime.Today;
 
             this.SetState(lRecord);
         }
