@@ -42,7 +42,7 @@
     <Compile Include="RecordModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RecordSubject.cs" />
-    <Compile Include="RecordTracker.cs" />
+    <Compile Include="RecordObserver.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\NotificationEngine\NotificationEngine.csproj">
