@@ -11,5 +11,6 @@ namespace NotificationEngine
         void Attach(IObserver<T> aObserver);
         T GetState();
         void SetState(T a);
+        void RefreshState();
     }
 }

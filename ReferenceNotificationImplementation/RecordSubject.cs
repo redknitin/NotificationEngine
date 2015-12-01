@@ -9,7 +9,7 @@ namespace ReferenceNotificationImplementation
 {
     public class RecordSubject : AbstractSubject<RecordModel>
     {
-        public void RefreshState()
+        public override void RefreshState()
         {
             RecordModel lRecord = new RecordModel();
 

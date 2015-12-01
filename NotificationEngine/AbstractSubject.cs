@@ -38,5 +38,10 @@ namespace NotificationEngine
                 }
             }
         }
+
+        public virtual void RefreshState()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

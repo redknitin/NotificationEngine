@@ -39,6 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AbstractBackgroundThreadedObserver.cs" />
     <Compile Include="AbstractSubject.cs" />
     <Compile Include="IObserver.cs" />
     <Compile Include="ISubject.cs" />
